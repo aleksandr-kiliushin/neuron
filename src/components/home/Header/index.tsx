@@ -9,20 +9,27 @@ import { Nav } from './Nav'
 import { Color } from '#styles/constants'
 
 // Assets
-import Logo1 from '#assets/logo-1.svg'
+import LogoLight from '#assets/logo-light.svg'
 
 export const Header = () => {
 	return (
-		<div
+		<header
 			css={css`
 				display: flex;
 				align-items: center;
+				justify-content: space-around;
 				height: 90px;
-				padding: 0px 70px;
-				background-color: ${Color.DarkViolet1};
+				padding: 0px 20px;
+				background-color: ${Color.Violet1};
 			`}
 		>
-			<Image alt="" src={Logo1} />
+			<div
+				css={css`
+					min-width: 200px;
+				`}
+			>
+				<Image alt="" src={LogoLight} />
+			</div>
 
 			<Nav />
 
@@ -30,10 +37,15 @@ export const Header = () => {
 				css={css`
 					height: 40px;
 					width: 180px;
+					background-color: ${Color.Light1};
+					border: 2px solid ${Color.Violet3};
+					border-radius: 8px;
+					color: ${Color.Violet3};
+					font-size: 14px;
 				`}
 			>
 				OPEN APP
 			</Button>
-		</div>
+		</header>
 	)
 }

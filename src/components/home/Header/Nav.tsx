@@ -13,7 +13,7 @@ export const Nav = () => {
 				align-items: center;
 				column-gap: 50px;
 				height: 27px;
-				margin: 0 auto 0 100px;
+				line-height: 27px;
 			`}
 		>
 			{navItems.map((navItem) => (
@@ -26,7 +26,7 @@ export const Nav = () => {
 							content: '';
 							position: relative;
 							left: 25px;
-							border-left: 1px solid ${Color.DarkViolet2};
+							border-left: 1px solid ${Color.Violet2};
 						}
 					`}
 					key={navItem}

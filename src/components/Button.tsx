@@ -3,13 +3,12 @@ import styled from '@emotion/styled'
 // Types
 import { ButtonHTMLAttributes, DetailedHTMLProps, ReactNode } from 'react'
 
-const StyledBytton = styled.button``
+const StyledButton = styled('button')``
 
-export const Button = ({ children }: IProps) => {
-	return <StyledBytton>{children}</StyledBytton>
+export const Button = ({ children, ...rest }: IProps) => {
+	return <StyledButton {...rest}>{children}</StyledButton>
 }
 
 type IProps = {
-	color?: 'danger' | 'light' | 'primary'
 	children: ReactNode
 } & DetailedHTMLProps<ButtonHTMLAttributes<HTMLButtonElement>, HTMLButtonElement>
