@@ -40,13 +40,10 @@ export const Footer = () => {
 					grid-template-columns: 1fr 2fr 270px;
 				`}
 			>
-				<div
-					css={css`
-						min-width: 200px;
-					`}
-				>
+				<div css={{ minWidth: '200px' }}>
 					<Image alt="" src={logo1Svg} />
 				</div>
+
 				<div
 					css={css`
 						display: grid;
@@ -63,20 +60,8 @@ export const Footer = () => {
 					))}
 				</div>
 
-				<div
-					css={css`
-						display: flex;
-						flex-direction: column;
-						row-gap: 40px;
-						align-items: end;
-					`}
-				>
-					<div
-						css={css`
-							display: flex;
-							column-gap: 30px;
-						`}
-					>
+				<div css={{ display: 'flex', flexDirection: 'column', rowGap: '40px', alignItems: 'end' }}>
+					<div css={{ display: 'flex', columnGap: '30px' }}>
 						<Image alt="" src={twitterDarkSvg} />
 						<Image alt="" src={telegramDarkSvg} />
 						<Image alt="" src={githubDarkSvg} />
@@ -101,13 +86,13 @@ export const Footer = () => {
 			</div>
 
 			<div
-				css={css`
-					margin-top: 97px;
-					color: ${Color.Violet13};
-					font-size: 14px;
-					font-weight: 700;
-					text-align: center;
-				`}
+				css={{
+					marginTop: '97px',
+					color: Color.Violet13,
+					fontSize: '14px',
+					fontWeight: 700,
+					textAlign: 'center',
+				}}
 			>
 				Copyright © Neuron Fund – 2021
 			</div>
