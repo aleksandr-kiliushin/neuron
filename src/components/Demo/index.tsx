@@ -31,7 +31,7 @@ export const Demo = () => {
 					Fund
 				</h2>
 
-				<div css={{ color: Color.Violet9, fontSize: '18px', fontWeight: 500, lineHeight: '30px' }}>
+				<div css={{ color: Color.Violet9, fontSize: '18px', fontWeight: 400, lineHeight: '30px' }}>
 					Neuron pools enable users to deposit assets to thoroughly tested smart contracts to gain
 					return on crypto-assets
 				</div>

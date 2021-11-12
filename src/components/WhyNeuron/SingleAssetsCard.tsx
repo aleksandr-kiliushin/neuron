@@ -3,6 +3,7 @@ import { css } from '@emotion/react'
 
 // Components
 import { Card } from './Card'
+import { CardText } from './CardText'
 
 // Assets
 import singleAssetsLogosSvg from '#assets/single-assets-logos.svg'
@@ -35,17 +36,10 @@ export const SingleAssetsCard = () => {
 				Single assets and stablecoins
 			</h4>
 
-			<div
-				css={css`
-					max-width: 318px;
-					color: white;
-					font-size: 16px;
-					line-height: 19px;
-				`}
-			>
+			<CardText css={{ maxWidth: '320px' }}>
 				Get your fiat-on-crypto to work with lending and liquidity investing of your US dollars. All
 				major stablecoins are supported (лого USDT, USDC, DAI, BUSD)
-			</div>
+			</CardText>
 		</Card>
 	)
 }

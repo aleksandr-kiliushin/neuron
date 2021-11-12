@@ -3,6 +3,7 @@ import { css } from '@emotion/react'
 
 // Components
 import { Card } from './Card'
+import { CardText } from './CardText'
 
 // Styles
 import { Color } from '#styles/constants'
@@ -69,17 +70,10 @@ export const SecurityCard = () => {
 				We are obsessed with security
 			</div>
 
-			<div
-				css={css`
-					max-width: 318px;
-					color: white;
-					font-size: 16px;
-					line-height: 19px;
-				`}
-			>
+			<CardText css={{ maxWidth: '318px' }}>
 				Regularly reaudited protocol, bug bounty campaign. Web3&#39;s brightest minds(link) work on
 				your better sleep at night.
-			</div>
+			</CardText>
 		</Card>
 	)
 }

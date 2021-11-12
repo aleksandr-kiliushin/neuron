@@ -28,14 +28,7 @@ export const WhyNeuron = () => {
 				background: linear-gradient(180deg, #2c29ba 0%, #2b28b9 0.01%, #8d8bff 100%);
 			`}
 		>
-			<h2
-				css={css`
-					color: white;
-					text-align: center;
-				`}
-			>
-				Why Neuron fund?
-			</h2>
+			<h2 css={{ color: 'white', textAlign: 'center' }}>Why Neuron fund?</h2>
 
 			<div
 				css={css`

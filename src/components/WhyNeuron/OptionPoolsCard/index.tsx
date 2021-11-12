@@ -4,6 +4,7 @@ import { css } from '@emotion/react'
 // Components
 import { Card } from '../Card'
 import { CompareYields } from './CompareYields'
+import { CardText } from '../CardText'
 
 // Styles
 import { Color } from '#styles/constants'
@@ -31,18 +32,10 @@ export const OptionPoolsCard = ({ marketUsdcYields }: IProps) => {
 					Option pools
 				</h3>
 
-				<div
-					css={css`
-						max-width: 310px;
-						margin-bottom: 14px;
-						color: white;
-						font-size: 16px;
-						line-height: 19px;
-					`}
-				>
+				<CardText css={{ maxWidth: '310px', marginBottom: '14px' }}>
 					Option trading strategies tuned to earn an additional yield automatically on assets you
 					are bullish &#128640;
-				</div>
+				</CardText>
 
 				<CompareYields />
 			</div>
