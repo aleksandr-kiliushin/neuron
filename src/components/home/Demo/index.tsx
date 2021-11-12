@@ -12,7 +12,9 @@ export const Demo = () => {
 	return (
 		<div
 			css={css`
-				position: relative;
+				display: grid;
+				grid-template-columns: 1fr 733px;
+				column-gap: 50px;
 				height: 550px;
 				padding-left: 70px;
 			`}
@@ -53,22 +55,28 @@ export const Demo = () => {
 
 			<div
 				css={css`
-					position: absolute;
-					right: 70px;
-					top: 0;
+					position: relative;
 				`}
 			>
-				<Image alt="" height="434" src={desktopDemoImg} width="733" />
-			</div>
+				<div
+					css={css`
+						position: absolute;
+						right: 70px;
+						top: 0;
+					`}
+				>
+					<Image alt="" height="434" src={desktopDemoImg} width="733" />
+				</div>
 
-			<div
-				css={css`
-					position: absolute;
-					right: 150px;
-					top: 150px;
-				`}
-			>
-				<Image alt="" height="400" src={mobileDemoImg} width="200" />
+				<div
+					css={css`
+						position: absolute;
+						right: 150px;
+						top: 150px;
+					`}
+				>
+					<Image alt="" height="400" src={mobileDemoImg} width="200" />
+				</div>
 			</div>
 		</div>
 	)

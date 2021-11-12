@@ -6,7 +6,17 @@ import { OptionPoolsCard } from './OptionPoolsCard'
 import { SecurityCard } from './SecurityCard'
 import { SingleAssetsCard } from './SingleAssetsCard'
 
+// Assets
+import aaveLogoSvg from '#assets/aave-logo.svg'
+
 export const WhyNeuron = () => {
+	const marketUsdcYields = [
+		{ logo: aaveLogoSvg, percent: 8.49 },
+		{ logo: aaveLogoSvg, percent: 8.49 },
+		{ logo: aaveLogoSvg, percent: 8.49 },
+		{ logo: aaveLogoSvg, percent: 8.49 },
+	]
+
 	return (
 		<div
 			css={css`
@@ -38,7 +48,7 @@ export const WhyNeuron = () => {
 				`}
 			>
 				<DistributionCard />
-				<OptionPoolsCard />
+				<OptionPoolsCard marketUsdcYields={marketUsdcYields} />
 				<SecurityCard />
 				<SingleAssetsCard />
 			</div>

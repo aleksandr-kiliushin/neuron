@@ -61,7 +61,7 @@ export const Cards = () => {
 					</div>
 					<div
 						css={css`
-							margin-top: 5px;
+							padding: 5px 19px 0;
 							color: white;
 							font-size: 18px;
 							line-height: 22px;

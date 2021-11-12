@@ -9,7 +9,7 @@ import { Nav } from './Nav'
 import { Color } from '#styles/constants'
 
 // Assets
-import LogoLight from '#assets/logo-light.svg'
+import logo2Svg from '#assets/logo-2.svg'
 
 export const Header = () => {
 	return (
@@ -28,7 +28,7 @@ export const Header = () => {
 					min-width: 200px;
 				`}
 			>
-				<Image alt="" src={LogoLight} />
+				<Image alt="" src={logo2Svg} />
 			</div>
 
 			<Nav />

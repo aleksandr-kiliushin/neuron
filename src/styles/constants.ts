@@ -21,4 +21,9 @@ export enum Color {
 	Violet14 = '#3a3ac2',
 	Violet15 = '#8283f7',
 	Violet16 = '#9898fe',
+	Violet17 = '#3333c2',
+	Violet18 = '#e7e7ff',
+	Violet19 = '#d0d0ff',
+	Violet20 = '#d6c7ff',
+	Violet21 = '#6b6bff',
 }

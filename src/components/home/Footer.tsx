@@ -8,7 +8,7 @@ import { Button } from '#components/Button'
 import { Color } from '#styles/constants'
 
 // Assets
-import logoDark from '#assets/logo-dark.svg'
+import logo1Svg from '#assets/logo-1.svg'
 import discordDarkSvg from '#assets/discord-dark.svg'
 import githubDarkSvg from '#assets/github-dark.svg'
 import mediumDarkSvg from '#assets/medium-dark.svg'
@@ -48,7 +48,7 @@ export const Footer = () => {
 						min-width: 200px;
 					`}
 				>
-					<Image alt="" src={logoDark} />
+					<Image alt="" src={logo1Svg} />
 				</div>
 				<div
 					css={css`
