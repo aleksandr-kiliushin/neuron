@@ -49,7 +49,7 @@ export const Intro = () => {
 				>
 					Earn yield
 				</h2>
-				<div
+				<h3
 					css={css`
 						margin-bottom: 16px;
 						color: white;
@@ -58,7 +58,7 @@ export const Intro = () => {
 					`}
 				>
 					ON CRYPTO AND STABLECOINS
-				</div>
+				</h3>
 				<div
 					css={css`
 						margin-bottom: 31px;

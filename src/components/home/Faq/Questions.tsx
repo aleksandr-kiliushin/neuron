@@ -40,6 +40,7 @@ export const Questions = () => {
 							background-color: ${isOpened ? Color.Light2 : 'white'};
 							border-radius: 8px 8px ${isOpened ? '0 0' : '8px 8px'};
 							color: ${Color.Dark1};
+							font-family: Lato;
 							font-size: 18px;
 							font-weight: 700;
 							line-height: 22px;

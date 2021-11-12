@@ -17,7 +17,11 @@ export const DistributionCard = () => {
 				padding: 35px 30px 50px 35px;
 			`}
 		>
-			<div>
+			<div
+				css={css`
+					font-family: Lato;
+				`}
+			>
 				<div>
 					<div
 						css={css`
@@ -63,16 +67,14 @@ export const DistributionCard = () => {
 			</div>
 
 			<div>
-				<div
+				<h4
 					css={css`
 						margin-bottom: 12px;
 						color: white;
-						font-size: 24px;
-						line-height: 29px;
 					`}
 				>
 					Revenue distribution
-				</div>
+				</h4>
 				<div
 					css={css`
 						color: white;

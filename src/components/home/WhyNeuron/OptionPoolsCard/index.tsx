@@ -34,7 +34,7 @@ export const OptionPoolsCard = ({ marketUsdcYields }: IProps) => {
 				<div
 					css={css`
 						max-width: 310px;
-						margin-bottom: 11px;
+						margin-bottom: 14px;
 						color: white;
 						font-size: 16px;
 						line-height: 19px;
