@@ -54,6 +54,7 @@ export const Cards = () => {
 						css={css`
 							color: ${Color.Violet6};
 							font-size: 18px;
+							font-weight: 600;
 							line-height: 22px;
 							text-align: center;
 						`}
@@ -65,6 +66,7 @@ export const Cards = () => {
 							padding: 5px 19px 0;
 							color: white;
 							font-size: 18px;
+							font-weight: 600;
 							line-height: 22px;
 							text-align: center;
 						`}

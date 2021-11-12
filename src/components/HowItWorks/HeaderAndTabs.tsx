@@ -11,13 +11,8 @@ export const HeaderAndTabs = () => {
 	]
 
 	return (
-		<div
-			css={css`
-				height: 204px;
-				padding: 60px 70px 28px;
-			`}
-		>
-			<h2>How Neuron Fund works?</h2>
+		<div css={{ height: '204px', padding: '30px 70px 28px' }}>
+			<h2 css={{ textAlign: 'center' }}>How Neuron Fund works?</h2>
 
 			<div
 				css={css`

@@ -1,6 +1,5 @@
 import Image from 'next/image'
 import styled from '@emotion/styled'
-import { css } from '@emotion/react'
 
 // Styles
 import { Color } from '#styles/constants'
@@ -26,12 +25,12 @@ const StyledButton = styled.button<{ kind: string }>`
 export const Intro = () => {
 	return (
 		<div
-			css={css`
-				position: relative;
-				height: 650px;
-				background: linear-gradient(180deg, #2b2974 0%, #343390 100%);
-				backdrop-filter: blur(10px);
-			`}
+			css={{
+				position: 'relative',
+				height: '650px',
+				background: 'linear-gradient(180deg, #2b2974 0%, #343390 100%)',
+				backdropFilter: 'blur(10px)',
+			}}
 		>
 			<div css={{ position: 'absolute', zIndex: 2, padding: '125px 0 0 72px' }}>
 				<div css={{ display: 'flex', columnGap: '30px', marginBottom: '17px' }}>
