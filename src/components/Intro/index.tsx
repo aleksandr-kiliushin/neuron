@@ -9,7 +9,7 @@ import discordLightSvg from '#assets/discord-light.svg'
 import mediumLightSvg from '#assets/medium-light.svg'
 import telegramLightSvg from '#assets/telegram-light.svg'
 import twitterLightSvg from '#assets/twitter-light.svg'
-// import introBackgroundJpg from '#assets/intro-background.png'
+import introBackgroundJpg from '#assets/intro-background.png'
 
 const StyledButton = styled.button<{ kind: string }>`
 	height: 60px;
@@ -60,7 +60,7 @@ export const Intro = () => {
 			</div>
 
 			<div css={{ position: 'absolute', right: 0, top: '-80px' }}>
-				{/* <Image alt="" src={introBackgroundJpg} /> */}
+				<Image alt="" src={introBackgroundJpg} />
 			</div>
 		</div>
 	)

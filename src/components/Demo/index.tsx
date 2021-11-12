@@ -20,14 +20,7 @@ export const Demo = () => {
 				background: linear-gradient(180deg, #383dc2 0%, #2c29ba 100%);
 			`}
 		>
-			<div
-				css={css`
-					display: flex;
-					flex-direction: column;
-					row-gap: 20px;
-					max-width: 415px;
-				`}
-			>
+			<div css={{ display: 'flex', flexDirection: 'column', rowGap: '20px', maxWidth: '415px' }}>
 				<h2>
 					Earn yield
 					<br />
@@ -38,40 +31,18 @@ export const Demo = () => {
 					Fund
 				</h2>
 
-				<div
-					css={css`
-						color: ${Color.Violet9};
-						font-size: 18px;
-						line-height: 30px;
-					`}
-				>
+				<div css={{ color: Color.Violet9, fontSize: '18px', fontWeight: 500, lineHeight: '30px' }}>
 					Neuron pools enable users to deposit assets to thoroughly tested smart contracts to gain
 					return on crypto-assets
 				</div>
 			</div>
 
-			<div
-				css={css`
-					position: relative;
-				`}
-			>
-				<div
-					css={css`
-						position: absolute;
-						right: 70px;
-						top: 0;
-					`}
-				>
+			<div css={{ position: 'relative' }}>
+				<div css={{ position: 'absolute', right: '70px', top: '0' }}>
 					<Image alt="" height="434" src={desktopDemoImg} width="733" />
 				</div>
 
-				<div
-					css={css`
-						position: absolute;
-						right: 150px;
-						top: 150px;
-					`}
-				>
+				<div css={{ position: 'absolute', right: '150px', top: '150px' }}>
 					<Image alt="" height="400" src={mobileDemoImg} width="200" />
 				</div>
 			</div>
