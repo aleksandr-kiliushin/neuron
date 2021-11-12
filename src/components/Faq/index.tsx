@@ -15,13 +15,7 @@ export const Faq = () => {
 				background: linear-gradient(179.65deg, #8d8bff 12.33%, #cac9ff 52.38%, #ffffff 87.42%);
 			`}
 		>
-			<h2
-				css={css`
-					color: white;
-				`}
-			>
-				FAQ
-			</h2>
+			<h2>FAQ</h2>
 
 			<Questions />
 		</div>

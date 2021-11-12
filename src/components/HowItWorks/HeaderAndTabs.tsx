@@ -17,19 +17,7 @@ export const HeaderAndTabs = () => {
 				padding: 60px 70px 28px;
 			`}
 		>
-			<h2
-				css={css`
-					display: flex;
-					align-items: center;
-					margin: 0;
-					color: white;
-					flex-direction: column;
-					font-size: 36px;
-					line-height: 43px;
-				`}
-			>
-				How Neuron Fund works?
-			</h2>
+			<h2>How Neuron Fund works?</h2>
 
 			<div
 				css={css`

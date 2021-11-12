@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import styled from '@emotion/styled'
 import { css } from '@emotion/react'
 
 // Styles
@@ -9,7 +10,18 @@ import discordLightSvg from '#assets/discord-light.svg'
 import mediumLightSvg from '#assets/medium-light.svg'
 import telegramLightSvg from '#assets/telegram-light.svg'
 import twitterLightSvg from '#assets/twitter-light.svg'
-import introBackgroundJpg from '#assets/intro-background.png'
+// import introBackgroundJpg from '#assets/intro-background.png'
+
+const StyledButton = styled.button<{ kind: string }>`
+	height: 60px;
+	width: 216px;
+	border-radius: 8px;
+	font-size: 18px;
+	text-transform: uppercase;
+	background-color: ${({ kind }) => (kind === 'primary' ? 'white' : 'transparent')};
+	border: ${({ kind }) => (kind === 'primary' ? 'none' : '2px solid white')};
+	color: ${({ kind }) => (kind === 'primary' ? Color.Violet4 : 'white')};
+`
 
 export const Intro = () => {
 	return (
@@ -21,98 +33,34 @@ export const Intro = () => {
 				backdrop-filter: blur(10px);
 			`}
 		>
-			<div
-				css={css`
-					position: absolute;
-					z-index: 2;
-					padding: 125px 0 0 72px;
-				`}
-			>
-				<div
-					css={css`
-						display: flex;
-						column-gap: 30px;
-						margin-bottom: 17px;
-					`}
-				>
+			<div css={{ position: 'absolute', zIndex: 2, padding: '125px 0 0 72px' }}>
+				<div css={{ display: 'flex', columnGap: '30px', marginBottom: '17px' }}>
 					<Image alt="" src={twitterLightSvg} />
 					<Image alt="" src={telegramLightSvg} />
 					<Image alt="" src={discordLightSvg} />
 					<Image alt="" src={mediumLightSvg} />
 				</div>
 
-				<h2
-					css={css`
-						color: white;
-					`}
-				>
-					Earn yield
-				</h2>
-				<h3
-					css={css`
-						margin-bottom: 16px;
-						color: white;
-						font-size: 36px;
-						line-height: 43px;
-					`}
-				>
-					ON CRYPTO AND STABLECOINS
-				</h3>
+				<h2>Earn yield</h2>
+				<h3>ON CRYPTO AND STABLECOINS</h3>
+
 				<div
-					css={css`
-						margin-bottom: 31px;
-						color: ${Color.Blue1};
-						font-size: 24px;
-						line-height: 29px;
-					`}
+					css={{ margin: '16px 0 31px', color: Color.Blue1, fontSize: '24px', lineHeight: '29px' }}
 				>
 					Invest and save with one easy-to-use platform.
 					<br />
 					Maximum yields with improved security.
 				</div>
 
-				<div
-					css={css`
-						display: flex;
-						column-gap: 40px;
-					`}
-				>
-					<button
-						css={css`
-							width: 216px;
-							height: 60px;
-							background-color: transparent;
-							border: 2px solid white;
-							border-radius: 8px;
-							color: white;
-							font-size: 18px;
-						`}
-					>
-						WHITE PAPER
-					</button>
-					<button
-						css={css`
-							width: 216px;
-							height: 60px;
-							background-color: white;
-							border: none;
-							border-radius: 8px;
-							color: ${Color.Violet4};
-							font-size: 18px;
-						`}
-					>
-						START INVESTING
-					</button>
+				<div>
+					<StyledButton kind="secondary" css={{ marginRight: '40px' }}>
+						White paper
+					</StyledButton>
+					<StyledButton kind="primary">Start investing</StyledButton>
 				</div>
 			</div>
 
-			<div
-				css={css`
-					position: absolute;
-					right: 0;
-					top: -80px;
-				`}
-			>
+			<div css={{ position: 'absolute', right: 0, top: '-80px' }}>
 				{/* <Image alt="" src={introBackgroundJpg} /> */}
 			</div>
 		</div>

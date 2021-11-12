@@ -28,11 +28,7 @@ export const Demo = () => {
 					max-width: 415px;
 				`}
 			>
-				<h2
-					css={css`
-						color: white;
-					`}
-				>
+				<h2>
 					Earn yield
 					<br />
 					in DeFi with
