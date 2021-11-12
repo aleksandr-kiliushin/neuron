@@ -17,23 +17,9 @@ export const CompareYields = () => {
 
 	return (
 		<div>
-			<h4
-				css={css`
-					margin-bottom: 13px;
-					color: white;
-				`}
-			>
-				Compare Neuron USDC Yields
-			</h4>
+			<h4 css={{ marginBottom: '13px', color: 'white' }}>Compare Neuron USDC Yields</h4>
 
-			<div
-				css={css`
-					color: ${Color.Violet20};
-					font-size: 14px;
-					font-weight: 600;
-					line-height: 19px;
-				`}
-			>
+			<div css={{ color: Color.Violet20, fontSize: '14px', fontWeight: 600, lineHeight: '19px' }}>
 				Your deposit
 			</div>
 
@@ -176,42 +162,16 @@ export const CompareYields = () => {
 					</div>
 				</div>
 
-				<div
-					css={css`
-						display: flex;
-						flex-direction: column;
-						row-gap: 6px;
-					`}
-				>
+				<div css={{ display: 'flex', flexDirection: 'column', rowGap: '6px' }}>
 					<Image alt="" src={logo3Svg} />
-					<div
-						css={css`
-							color: white;
-							font-size: 18px;
-							font-weight: 600;
-							line-height: 22px;
-						`}
-					>
+					<div css={{ color: 'white', fontSize: '18px', fontWeight: 600, lineHeight: '22px' }}>
 						{annualPercent}%
 					</div>
 				</div>
 			</div>
 
-			<div
-				css={css`
-					display: flex;
-					flex-direction: column;
-					row-gap: 12px;
-				`}
-			>
-				<div
-					css={css`
-						color: ${Color.Violet20};
-						font-size: 14px;
-						font-weight: 600;
-						line-height: 19px;
-					`}
-				>
+			<div css={{ display: 'flex', flexDirection: 'column', rowGap: '12px' }}>
+				<div css={{ color: Color.Violet20, fontSize: '14px', fontWeight: 600, lineHeight: '19px' }}>
 					You will earn per 1 year
 				</div>
 
@@ -231,14 +191,7 @@ export const CompareYields = () => {
 					`}
 				/>
 
-				<div
-					css={css`
-						color: white;
-						font-size: 18px;
-						font-weight: 600;
-						line-height: 22px;
-					`}
-				>
+				<div css={{ color: 'white', fontSize: '18px', fontWeight: 600, lineHeight: '22px' }}>
 					${amountYouWillEarn}
 				</div>
 			</div>

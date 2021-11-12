@@ -18,21 +18,11 @@ export const SingleAssetsCard = () => {
 				padding: 32px 20px 60px 45px;
 			`}
 		>
-			<div
-				css={css`
-					align-self: end;
-				`}
-			>
+			<div css={{ alignSelf: 'end' }}>
 				<Image alt="" src={singleAssetsLogosSvg} />
 			</div>
 
-			<h4
-				css={css`
-					max-width: 300px;
-					margin-bottom: 29px;
-					color: white;
-				`}
-			>
+			<h4 css={{ maxWidth: '300px', marginBottom: '29px', color: 'white' }}>
 				Single assets and stablecoins
 			</h4>
 

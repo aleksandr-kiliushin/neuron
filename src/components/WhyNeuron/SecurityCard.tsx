@@ -40,32 +40,14 @@ export const SecurityCard = () => {
 			>
 				<Image alt="" src={greenShieldSvg} />
 
-				<div
-					css={css`
-						margin: 0 26px 0 16px;
-					`}
-				>
-					Audit successfully passed
-				</div>
+				<div css={{ margin: '0 26px 0 16px' }}>Audit successfully passed</div>
 				<Image alt="" src={pdfDocSvg} />
 			</div>
 
-			<h4
-				css={css`
-					margin-bottom: 7px;
-					color: white;
-				`}
-			>
-				Security
-			</h4>
+			<h4 css={{ marginBottom: '7px', color: 'white' }}>Security</h4>
 
 			<div
-				css={css`
-					margin-bottom: 25px;
-					color: ${Color.Violet16};
-					font-size: 16px;
-					line-height: 19px;
-				`}
+				css={{ marginBottom: '25px', color: Color.Violet16, fontSize: '16px', lineHeight: '19px' }}
 			>
 				We are obsessed with security
 			</div>

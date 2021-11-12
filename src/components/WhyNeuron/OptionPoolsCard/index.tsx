@@ -11,26 +11,9 @@ import { Color } from '#styles/constants'
 
 export const OptionPoolsCard = ({ marketUsdcYields }: IProps) => {
 	return (
-		<Card
-			css={css`
-				grid-area: option-pools;
-				display: grid;
-				grid-template-rows: 3fr 1fr;
-			`}
-		>
-			<div
-				css={css`
-					padding: 45px 40px;
-				`}
-			>
-				<h3
-					css={css`
-						margin-bottom: 17px;
-						color: white;
-					`}
-				>
-					Option pools
-				</h3>
+		<Card css={{ gridArea: 'option-pools', display: 'grid', gridTemplateRows: '3fr 1fr' }}>
+			<div css={{ padding: '45px 40px' }}>
+				<h3 css={{ marginBottom: '17px', color: 'white' }}>Option pools</h3>
 
 				<CardText css={{ maxWidth: '310px', marginBottom: '14px' }}>
 					Option trading strategies tuned to earn an additional yield automatically on assets you
@@ -49,46 +32,26 @@ export const OptionPoolsCard = ({ marketUsdcYields }: IProps) => {
 				`}
 			>
 				<div
-					css={css`
-						margin-bottom: 15px;
-						color: ${Color.Violet18};
-						font-size: 14px;
-						line-height: 17px;
-					`}
+					css={{
+						marginBottom: '15px',
+						color: Color.Violet18,
+						fontSize: '14px',
+						lineHeight: '17px',
+					}}
 				>
 					Market USDC Yelds
 				</div>
 
-				<div
-					css={css`
-						display: flex;
-						column-gap: 21px;
-					`}
-				>
+				<div css={{ display: 'flex', columnGap: '21px' }}>
 					{marketUsdcYields.map(({ logo, percent }, index) => (
 						<div
-							css={css`
-								display: flex;
-								flex-direction: column;
-								align-items: start;
-								row-gap: 8px;
-							`}
+							css={{ display: 'flex', flexDirection: 'column', alignItems: 'start', rowGap: '8px' }}
 							key={index}
 						>
-							<div
-								css={css`
-									padding-left: 3px;
-								`}
-							>
+							<div css={{ paddingLeft: '3px' }}>
 								<Image alt="" src={logo} />
 							</div>
-							<div
-								css={css`
-									color: ${Color.Violet19};
-									font-size: 16px;
-									line-height: 19px;
-								`}
-							>
+							<div css={{ color: Color.Violet19, fontSize: '16px', lineHeight: '19px' }}>
 								{percent}%
 							</div>
 						</div>
