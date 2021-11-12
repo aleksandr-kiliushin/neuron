@@ -22,14 +22,7 @@ export const Questions = () => {
 	]
 
 	return (
-		<div
-			css={css`
-				display: flex;
-				flex-direction: column;
-				row-gap: 4px;
-				max-width: 930px;
-			`}
-		>
+		<div css={{ display: 'flex', flexDirection: 'column', rowGap: '4px', maxWidth: '930px' }}>
 			{questions.map(({ answer, isOpened, question }, index) => (
 				<div key={index}>
 					<div
@@ -50,10 +43,7 @@ export const Questions = () => {
 
 						<Image
 							alt=""
-							css={css`
-								transform: ${isOpened ? 'none' : 'rotate(180deg)'};
-								stroke: black;
-							`}
+							css={{ transform: isOpened ? 'none' : 'rotate(180deg)' }}
 							src={chevronSvg}
 						/>
 					</div>
