@@ -20,6 +20,8 @@ export const Intro = () => {
 			css={css`
 				position: relative;
 				height: 650px;
+				background: linear-gradient(180deg, #2b2974 0%, #343390 100%);
+				backdrop-filter: blur(10px);
 			`}
 		>
 			<div

@@ -13,18 +13,12 @@ import { WhyNeuron } from '#components/home/WhyNeuron'
 export default function Home() {
 	return (
 		<>
-			<div
-				css={css`
-					background: linear-gradient(#2b2974, #2621bf, #1c2082, #6361f0, #ffffff);
-				`}
-			>
-				<Header />
-				<Intro />
-				<HowItWorks />
-				<Demo />
-				<WhyNeuron />
-				<Faq />
-			</div>
+			<Header />
+			<Intro />
+			<HowItWorks />
+			<Demo />
+			<WhyNeuron />
+			<Faq />
 			<Footer />
 		</>
 	)

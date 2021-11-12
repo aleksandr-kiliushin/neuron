@@ -29,7 +29,8 @@ export const Cards = () => {
 			css={css`
 				display: flex;
 				justify-content: space-around;
-				margin-top: 50px;
+				padding-bottom: 100px;
+				background: linear-gradient(180deg, #333398 0%, #383dc1 96.35%);
 			`}
 		>
 			{cards.map(({ image, stepNumber, text }) => (

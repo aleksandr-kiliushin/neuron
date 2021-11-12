@@ -25,6 +25,7 @@ export const WhyNeuron = () => {
 				row-gap: 50px;
 				height: 890px;
 				padding: 95px 70px;
+				background: linear-gradient(180deg, #2c29ba 0%, #2b28b9 0.01%, #8d8bff 100%);
 			`}
 		>
 			<h2

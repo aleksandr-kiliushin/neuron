@@ -17,6 +17,7 @@ export const Demo = () => {
 				column-gap: 50px;
 				height: 550px;
 				padding-left: 70px;
+				background: linear-gradient(180deg, #383dc2 0%, #2c29ba 100%);
 			`}
 		>
 			<div
