@@ -4,10 +4,10 @@ import { css } from '@emotion/react'
 import { Color } from '#styles/constants'
 
 export const Nav = () => {
-	const navItems = ['INVESTMENTS', 'HOW IT WORKS', 'ABOUT', 'TEAM']
+	const navItems = ['Investments', 'How it works', 'About', 'Team']
 
 	return (
-		<div
+		<nav
 			css={css`
 				display: flex;
 				align-items: center;
@@ -21,6 +21,7 @@ export const Nav = () => {
 					css={css`
 						height: 100%;
 						color: ${Color.LightBlue1};
+						text-transform: uppercase;
 
 						&:not(:last-child):after {
 							content: '';
@@ -34,6 +35,6 @@ export const Nav = () => {
 					{navItem}
 				</div>
 			))}
-		</div>
+		</nav>
 	)
 }

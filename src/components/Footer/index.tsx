@@ -1,9 +1,6 @@
 import Image from 'next/image'
 import { css } from '@emotion/react'
 
-// Components
-import { Button } from '#components/Button'
-
 // Styles
 import { Color } from '#styles/constants'
 
@@ -87,7 +84,7 @@ export const Footer = () => {
 						<Image alt="" src={mediumDarkSvg} />
 					</div>
 
-					<Button
+					<button
 						css={css`
 							height: 40px;
 							width: 182px;
@@ -99,7 +96,7 @@ export const Footer = () => {
 						`}
 					>
 						Start investing
-					</Button>
+					</button>
 				</div>
 			</div>
 

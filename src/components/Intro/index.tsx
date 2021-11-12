@@ -1,9 +1,6 @@
 import Image from 'next/image'
 import { css } from '@emotion/react'
 
-// Components
-import { Button } from '#components/Button'
-
 // Styles
 import { Color } from '#styles/constants'
 
@@ -80,7 +77,7 @@ export const Intro = () => {
 						column-gap: 40px;
 					`}
 				>
-					<Button
+					<button
 						css={css`
 							width: 216px;
 							height: 60px;
@@ -92,8 +89,8 @@ export const Intro = () => {
 						`}
 					>
 						WHITE PAPER
-					</Button>
-					<Button
+					</button>
+					<button
 						css={css`
 							width: 216px;
 							height: 60px;
@@ -105,7 +102,7 @@ export const Intro = () => {
 						`}
 					>
 						START INVESTING
-					</Button>
+					</button>
 				</div>
 			</div>
 
@@ -116,7 +113,7 @@ export const Intro = () => {
 					top: -80px;
 				`}
 			>
-				<Image alt="" src={introBackgroundJpg} />
+				{/* <Image alt="" src={introBackgroundJpg} /> */}
 			</div>
 		</div>
 	)

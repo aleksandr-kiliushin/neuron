@@ -2,7 +2,6 @@ import Image from 'next/image'
 import { css } from '@emotion/react'
 
 // Components
-import { Button } from '#components/Button'
 import { Nav } from './Nav'
 
 // Styles
@@ -23,29 +22,23 @@ export const Header = () => {
 				background-color: ${Color.Violet1};
 			`}
 		>
-			<div
-				css={css`
-					min-width: 200px;
-				`}
-			>
-				<Image alt="" src={logo2Svg} />
-			</div>
+			<Image alt="" src={logo2Svg} />
 
 			<Nav />
 
-			<Button
+			<button
 				css={css`
 					height: 40px;
 					width: 180px;
 					background-color: ${Color.Light1};
 					border: 2px solid ${Color.Violet3};
-					border-radius: 8px;
 					color: ${Color.Violet3};
 					font-size: 14px;
+					text-transform: uppercase;
 				`}
 			>
-				OPEN APP
-			</Button>
+				Open app
+			</button>
 		</header>
 	)
 }
