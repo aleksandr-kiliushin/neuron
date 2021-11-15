@@ -6,7 +6,7 @@ import { Color } from '#styles/constants'
 // Types
 import { Dispatch, SetStateAction } from 'react'
 
-export const CompareYields = ({ annualPercent, deposit, setDeposit, maxAmount }: IProps) => {
+export const InputRange = ({ deposit, setDeposit, maxAmount }: IProps) => {
 	return (
 		<input
 			css={css`
@@ -126,7 +126,6 @@ export const CompareYields = ({ annualPercent, deposit, setDeposit, maxAmount }:
 }
 
 interface IProps {
-	annualPercent: number
 	deposit: number
 	setDeposit: Dispatch<SetStateAction<number>>
 	maxAmount: number
