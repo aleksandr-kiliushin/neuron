@@ -1,7 +1,7 @@
 import { css } from '@emotion/react'
 
 // Styles
-import { Color } from '#styles/index'
+import { Color, mqMobile } from '#styles/index'
 
 export const Nav = () => {
 	const navItems = ['Investments', 'How it works', 'About', 'Team']
@@ -14,6 +14,10 @@ export const Nav = () => {
 				column-gap: 50px;
 				height: 27px;
 				line-height: 27px;
+
+				${mqMobile} {
+					display: none;
+				}
 			`}
 		>
 			{navItems.map((navItem) => (
