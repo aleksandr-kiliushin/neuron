@@ -5,7 +5,7 @@ import { Card } from './Card'
 import { CardText } from './CardText'
 
 // Styles
-import { Color } from '#styles/constants'
+import { Color } from '#styles/index'
 
 export const DistributionCard = () => {
 	return (

@@ -1,3 +1,5 @@
+export const mqMobile = '@media (max-width: 480px)'
+
 export enum Color {
 	Blue1 = '#68c6e6',
 	Cyan1 = '#0be1f7',

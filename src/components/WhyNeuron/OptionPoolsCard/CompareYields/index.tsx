@@ -7,7 +7,7 @@ import { InputRange } from './InputRange'
 import { AmountYouWillEarnPerYearBar } from './AmountYouWillEarnPerYearBar'
 
 // Styles
-import { Color } from '#styles/constants'
+import { Color } from '#styles/index'
 
 // Assets
 import logo3Svg from '#assets/logo-3.svg'

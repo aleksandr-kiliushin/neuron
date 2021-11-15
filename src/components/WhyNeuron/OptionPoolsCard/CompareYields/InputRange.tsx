@@ -1,7 +1,7 @@
 import { css } from '@emotion/react'
 
 // Styles
-import { Color } from '#styles/constants'
+import { Color } from '#styles/index'
 
 // Types
 import { Dispatch, SetStateAction } from 'react'

@@ -7,7 +7,7 @@ import { CompareYields } from './CompareYields'
 import { CardText } from '../CardText'
 
 // Styles
-import { Color } from '#styles/constants'
+import { Color } from '#styles/index'
 
 export const OptionPoolsCard = ({ marketUsdcYields }: IProps) => {
 	return (

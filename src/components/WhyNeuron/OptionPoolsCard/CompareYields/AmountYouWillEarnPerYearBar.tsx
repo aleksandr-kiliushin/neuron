@@ -1,7 +1,7 @@
 import styled from '@emotion/styled'
 
 // Styles
-import { Color } from '#styles/constants'
+import { Color } from '#styles/index'
 
 export const AmountYouWillEarnPerYearBar = styled.div<IProps>`
 	height: 17px;

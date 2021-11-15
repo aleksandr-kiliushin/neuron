@@ -5,10 +5,11 @@ import { css } from '@emotion/react'
 import { Nav } from './Nav'
 
 // Styles
-import { Color } from '#styles/constants'
+import { Color, mqMobile } from '#styles/index'
 
 // Assets
 import logo2Svg from '#assets/logo-2.svg'
+import MenuButtonMobile from '#assets/menu-button-mobile.svg'
 
 export const Header = () => {
 	return (
@@ -20,8 +21,14 @@ export const Header = () => {
 				height: 90px;
 				padding: 0px 20px;
 				background-color: ${Color.Violet1};
+
+				// ${mqMobile} {
+				// 	font-size: 50px;
+				// }
 			`}
 		>
+			<Image alt="" src={MenuButtonMobile} />
+
 			<Image alt="" src={logo2Svg} />
 
 			<Nav />

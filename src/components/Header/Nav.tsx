@@ -1,7 +1,7 @@
 import { css } from '@emotion/react'
 
 // Styles
-import { Color } from '#styles/constants'
+import { Color } from '#styles/index'
 
 export const Nav = () => {
 	const navItems = ['Investments', 'How it works', 'About', 'Team']

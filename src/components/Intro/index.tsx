@@ -2,7 +2,7 @@ import Image from 'next/image'
 import styled from '@emotion/styled'
 
 // Styles
-import { Color } from '#styles/constants'
+import { Color } from '#styles/index'
 
 // Assets
 import discordLightSvg from '#assets/discord-light.svg'

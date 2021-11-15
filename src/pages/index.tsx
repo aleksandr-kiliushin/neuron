@@ -1,4 +1,4 @@
-import React from 'react'
+import { css } from '@emotion/react'
 
 // Components
 import { Header } from '#components/Header'
@@ -11,14 +11,25 @@ import { WhyNeuron } from '#components/WhyNeuron'
 
 export default function Home() {
 	return (
-		<>
+		<div
+			css={css`
+				background: linear-gradient(
+					180deg,
+					#2b2974 0%,
+					#2621bf 17.19%,
+					#1c2082 39.06%,
+					#6361f0 70.31%,
+					#ffffff 86.98%
+				);
+			`}
+		>
 			<Header />
-			<Intro />
+			{/* <Intro />
 			<HowItWorks />
 			<Demo />
 			<WhyNeuron />
 			<Faq />
-			<Footer />
-		</>
+			<Footer /> */}
+		</div>
 	)
 }

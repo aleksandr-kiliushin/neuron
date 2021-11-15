@@ -1,7 +1,7 @@
 import styled from '@emotion/styled'
 
 // Styles
-import { Color } from '#styles/constants'
+import { Color } from '#styles/index'
 
 // Types
 import { DetailedHTMLProps, HTMLAttributes, ReactNode } from 'react'

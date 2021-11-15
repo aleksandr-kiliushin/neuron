@@ -2,7 +2,7 @@ import Image from 'next/image'
 import { css } from '@emotion/react'
 
 // Styles
-import { Color } from '#styles/constants'
+import { Color } from '#styles/index'
 
 // Assets
 import chevronSvg from '#assets/chevron.svg'
