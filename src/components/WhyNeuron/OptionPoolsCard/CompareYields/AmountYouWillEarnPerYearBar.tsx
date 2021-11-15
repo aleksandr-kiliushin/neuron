@@ -9,11 +9,11 @@ export const AmountYouWillEarnPerYearBar = styled.div<IProps>`
 	 * [+ 20px] makes bar to look correctly for low deposit values.
 	 * [100% - 72px] - this way we get length of the input, so we can
 	 * calc length of the bar depending on the input length.
-	 * [* 0.9] reduces effect of [+ 20px] which we added for low deposit values,
+	 * [* 0.92] reduces effect of [+ 20px] which we added for low deposit values,
 	 * so the bar length looks correct for high deposit values.
 	 **/
 	width: calc(
-		20px + (100% - 72px) * ${({ amountYouWillEarn }) => amountYouWillEarn * 0.9} /
+		20px + (100% - 72px) * ${({ amountYouWillEarn }) => amountYouWillEarn * 0.95} /
 			${({ maxAmount }) => maxAmount}
 	);
 	background-color: ${Color.Violet21};
