@@ -43,3 +43,15 @@ button {
 	border-radius: 8px;
 	font-weight: 700;
 }
+
+@media (max-width: 480px) {
+	h2 {
+		font-size: 38px;
+		line-height: 45px;
+	}
+
+	h3 {
+		font-size: 28px;
+		line-height: 34px;
+	}
+}
