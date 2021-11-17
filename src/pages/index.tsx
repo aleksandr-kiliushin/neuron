@@ -25,8 +25,8 @@ export default function Home() {
 		>
 			<Header />
 			<Intro />
-			{/* <HowItWorks />
-			<Demo />
+			<HowItWorks />
+			{/* <Demo />
 			<WhyNeuron />
 			<Faq />
 			<Footer /> */}
