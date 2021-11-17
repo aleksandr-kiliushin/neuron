@@ -76,24 +76,8 @@ export const Intro = () => {
 					<Image alt="" src={mediumLightSvg} />
 				</div>
 
-				<h2
-					css={css`
-						${mqMobile} {
-							text-align: center;
-						}
-					`}
-				>
-					Earn yield
-				</h2>
-				<h3
-					css={css`
-						${mqMobile} {
-							text-align: center;
-						}
-					`}
-				>
-					ON CRYPTO AND STABLECOINS
-				</h3>
+				<h2>Earn yield</h2>
+				<h3>ON CRYPTO AND STABLECOINS</h3>
 
 				<div
 					css={css`
