@@ -25,7 +25,6 @@ const StyledButton = styled.button<{ kind: string }>`
 	background-color: ${({ kind }) => (kind === 'primary' ? 'white' : 'transparent')};
 	border: ${({ kind }) => (kind === 'primary' ? 'none' : '2px solid white')};
 	color: ${({ kind }) => (kind === 'primary' ? Color.Violet4 : 'white')};
-
 	${mqMobile} {
 		height: 40px;
 		font-size: 14px;
@@ -39,10 +38,9 @@ export const Intro = () => {
 		<div
 			css={css`
 				position: relative;
-				height: 650px;
+				height: 700px;
 				background: linear-gradient(180deg, #2b2974 0%, #343390 100%);
 				backdrop-filter: blur(10px);
-
 				${mqMobile} {
 					height: 300px;
 				}
@@ -53,7 +51,6 @@ export const Intro = () => {
 					position: absolute;
 					z-index: 2;
 					padding: 125px 0 0 72px;
-
 					${mqMobile} {
 						padding: 50px 30px 0;
 					}
@@ -64,7 +61,6 @@ export const Intro = () => {
 						display: flex;
 						column-gap: 30px;
 						margin-bottom: 17px;
-
 						${mqMobile} {
 							display: none;
 						}
@@ -85,7 +81,6 @@ export const Intro = () => {
 						color: ${Color.Blue1};
 						font-size: 24px;
 						line-height: 29px;
-
 						${mqMobile} {
 							margin: 14px 0 25px;
 							font-size: 14px;
@@ -112,7 +107,6 @@ export const Intro = () => {
 					<StyledButton
 						css={css`
 							margin-right: 40px;
-
 							${mqMobile} {
 								display: none;
 								height: 40px;
@@ -131,7 +125,6 @@ export const Intro = () => {
 					position: absolute;
 					right: 0;
 					top: -80px;
-
 					${mqMobile} {
 						top: 0;
 					}
