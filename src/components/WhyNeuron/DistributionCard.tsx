@@ -33,7 +33,7 @@ export const DistributionCard = () => {
 			</div>
 
 			<div>
-				<h4 css={{ marginBottom: '12px', color: 'white' }}>Revenue distribution</h4>
+				<h4 css={{ marginBottom: '12px' }}>Revenue distribution</h4>
 
 				<CardText>
 					veNEUR token entitles to the share of Neuron&#39;s revenue. The fund collects no other

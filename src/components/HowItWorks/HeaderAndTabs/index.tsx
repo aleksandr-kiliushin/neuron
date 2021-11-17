@@ -27,7 +27,7 @@ export const HeaderAndTabs = () => {
 					}
 				`}
 			>
-				HOW NEURON FUND WORKS?
+				How Neuron Fund works?
 			</h3>
 
 			<Tabs />

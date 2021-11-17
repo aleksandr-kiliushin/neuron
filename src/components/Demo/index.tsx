@@ -46,7 +46,7 @@ export const Demo = () => {
 						max-width: 370px;
 					`}
 				>
-					EARN YIELD IN DEFI WITH NEURON FUND
+					Earn yield in DeFi with Neuron Fund
 				</h3>
 
 				<div

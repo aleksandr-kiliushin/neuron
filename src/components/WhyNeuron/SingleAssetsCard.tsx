@@ -22,9 +22,7 @@ export const SingleAssetsCard = () => {
 				<Image alt="" src={singleAssetsLogosSvg} />
 			</div>
 
-			<h4 css={{ maxWidth: '300px', marginBottom: '29px', color: 'white' }}>
-				Single assets and stablecoins
-			</h4>
+			<h4 css={{ maxWidth: '300px', marginBottom: '29px' }}>Single assets and stablecoins</h4>
 
 			<CardText css={{ maxWidth: '320px' }}>
 				Get your fiat-on-crypto to work with lending and liquidity investing of your US dollars. All

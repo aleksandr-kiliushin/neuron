@@ -73,7 +73,7 @@ export const Intro = () => {
 				</div>
 
 				<h2>Earn yield</h2>
-				<h3>ON CRYPTO AND STABLECOINS</h3>
+				<h3>On crypto and stablecoins</h3>
 
 				<div
 					css={css`
