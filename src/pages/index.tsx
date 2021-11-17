@@ -27,8 +27,8 @@ export default function Home() {
 			<Intro />
 			<HowItWorks />
 			<Demo />
-			{/* <WhyNeuron />
-			<Faq />
+			<WhyNeuron />
+			{/* <Faq />
 			<Footer /> */}
 		</div>
 	)
