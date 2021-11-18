@@ -33,7 +33,7 @@ export const Question = ({ isOpened, questionData, toggleQuestion }: IProps) => 
 					column-gap: 20px;
 					padding: 30px 50px 30px 85px;
 					background-color: ${isOpened ? Color.Light2 : 'white'};
-					border-radius: 8px 8px ${isOpened && !isMobile ? '0 0' : '8px 8px'};
+					border-radius: 8px 8px ${isOpened ? '0 0' : '8px 8px'};
 					color: ${Color.Dark1};
 					font-family: Lato;
 					font-size: 18px;
@@ -63,21 +63,25 @@ export const Question = ({ isOpened, questionData, toggleQuestion }: IProps) => 
 				</div>
 			</div>
 
-			{isOpened && (
-				<div
-					css={css`
-						padding: 34px 56px 46px 81px;
-						background-color: white;
-						border-top: 1px solid ${Color.Violet24};
-						border-radius: 0 0 8px 8px;
-						color: ${Color.Dark1};
-						font-size: 18px;
-						line-height: 22px;
-					`}
-				>
-					{answer}
-				</div>
-			)}
+			<div
+				css={css`
+					display: ${isOpened ? 'static' : 'none'};
+					padding: 34px 56px 46px 81px;
+					background-color: white;
+					border-top: 1px solid ${Color.Violet24};
+					border-radius: 0 0 8px 8px;
+					color: ${Color.Dark1};
+					font-size: 18px;
+					line-height: 22px;
+					${mqMobile} {
+						padding: 18px 25px;
+						font-size: 13px;
+						line-height: 16px;
+					}
+				`}
+			>
+				{answer}
+			</div>
 		</div>
 	)
 }
