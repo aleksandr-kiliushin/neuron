@@ -25,6 +25,7 @@ const StyledButton = styled.button<{ kind: string }>`
 	background-color: ${({ kind }) => (kind === 'primary' ? 'white' : 'transparent')};
 	border: ${({ kind }) => (kind === 'primary' ? 'none' : '2px solid white')};
 	color: ${({ kind }) => (kind === 'primary' ? Color.Violet4 : 'white')};
+	cursor: pointer;
 	${mqMobile} {
 		height: 40px;
 		font-size: 14px;

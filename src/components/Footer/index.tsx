@@ -129,6 +129,7 @@ export const Footer = () => {
 							border-radius: 8px;
 							color: white;
 							text-transform: uppercase;
+							cursor: pointer;
 						`}
 					>
 						Start investing

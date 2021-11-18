@@ -18,6 +18,7 @@ export const AmountYouWillEarnPerYearBar = styled.div<IProps>`
 	);
 	background-color: ${Color.Violet21};
 	border-radius: 8px;
+	transition: width 0.4s ease-in;
 `
 
 interface IProps {

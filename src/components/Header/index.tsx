@@ -49,7 +49,7 @@ export const Header = () => {
 					color: ${Color.Violet3};
 					font-size: 14px;
 					text-transform: uppercase;
-
+					cursor: pointer;
 					${mqMobile} {
 						height: 25px;
 						width: 40px;
