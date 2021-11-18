@@ -23,7 +23,7 @@ export const Demo = () => {
 				padding-left: 70px;
 				background: linear-gradient(180deg, #383dc2 0%, #2c29ba 100%);
 				${mqMobile} {
-					grid-template-columns: auto;
+					grid-template-columns: initial;
 					height: auto;
 					padding: 0 15px 50px;
 				}
@@ -41,13 +41,17 @@ export const Demo = () => {
 					}
 				`}
 			>
-				<h3
+				<h2
 					css={css`
 						max-width: 370px;
+						${mqMobile} {
+							font-size: 28px;
+							line-height: 34px;
+						}
 					`}
 				>
 					Earn yield in DeFi with Neuron Fund
-				</h3>
+				</h2>
 
 				<div
 					css={css`

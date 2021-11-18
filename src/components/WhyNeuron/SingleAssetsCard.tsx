@@ -5,6 +5,9 @@ import { css } from '@emotion/react'
 import { Card } from './Card'
 import { CardText } from './CardText'
 
+// Styles
+import { mqMobile } from '#styles/index'
+
 // Assets
 import singleAssetsLogosSvg from '#assets/single-assets-logos.svg'
 
@@ -16,15 +19,40 @@ export const SingleAssetsCard = () => {
 				display: flex;
 				flex-direction: column;
 				padding: 32px 20px 60px 45px;
+				${mqMobile} {
+					padding: 27px;
+				}
 			`}
 		>
-			<div css={{ alignSelf: 'end' }}>
+			<div
+				css={css`
+					align-self: end;
+					${mqMobile} {
+						align-self: initial;
+						margin-bottom: 24px;
+					}
+				`}
+			>
 				<Image alt="" src={singleAssetsLogosSvg} />
 			</div>
 
-			<h4 css={{ maxWidth: '300px', marginBottom: '29px' }}>Single assets and stablecoins</h4>
+			<h4
+				css={css`
+					max-width: 300px;
+					margin-bottom: 29px;
+					${mqMobile} {
+						margin-bottom: 11px;
+					}
+				`}
+			>
+				Single assets and stablecoins
+			</h4>
 
-			<CardText css={{ maxWidth: '320px' }}>
+			<CardText
+				css={css`
+					max-width: 320px;
+				`}
+			>
 				Get your fiat-on-crypto to work with lending and liquidity investing of your US dollars. All
 				major stablecoins are supported (лого USDT, USDC, DAI, BUSD)
 			</CardText>

@@ -1,4 +1,5 @@
 import { css } from '@emotion/react'
+import styled from '@emotion/styled'
 
 // Components
 import { Card } from './Card'
@@ -7,33 +8,57 @@ import { CardText } from './CardText'
 // Styles
 import { Color } from '#styles/index'
 
+const DistributionValue = styled.div`
+	color: ${Color.Cyan1};
+	font-size: 48px;
+	line-height: 69px;
+`
+
+const DistributionComment = styled.div`
+	color: white;
+	font-size: 24px;
+	line-height: 29px;
+`
+
 export const DistributionCard = () => {
 	return (
 		<Card
 			css={css`
+				grid-area: distribution;
 				display: flex;
 				flex-direction: column;
 				justify-content: space-between;
-				grid-area: distribution;
+				row-gap: 32px;
 				padding: 35px 30px 50px 35px;
 			`}
 		>
-			<div css={{ fontFamily: 'Lato' }}>
+			<div
+				css={css`
+					display: flex;
+					flex-direction: column;
+					row-gap: 13px;
+					font-family: Lato;
+				`}
+			>
 				<div>
-					<div css={{ color: Color.Cyan1, fontSize: '48px', lineHeight: '69px' }}>$74,300</div>
-					<div css={{ marginBottom: '13px', color: 'white', fontSize: '24px', lineHeight: '29px' }}>
-						distributed in Jul &#39;21
-					</div>
+					<DistributionValue>$74,300</DistributionValue>
+					<DistributionComment>distributed in Jul &#39;21</DistributionComment>
 				</div>
 
 				<div>
-					<div css={{ color: Color.Cyan1, fontSize: '48px', lineHeight: '69px' }}>152</div>
-					<div css={{ color: 'white', fontSize: '24px', lineHeight: '29px' }}>veNEUR holders</div>
+					<DistributionValue>152</DistributionValue>
+					<DistributionComment>veNEUR holders</DistributionComment>
 				</div>
 			</div>
 
 			<div>
-				<h4 css={{ marginBottom: '12px' }}>Revenue distribution</h4>
+				<h4
+					css={css`
+						margin-bottom: 12px;
+					`}
+				>
+					Revenue distribution
+				</h4>
 
 				<CardText>
 					veNEUR token entitles to the share of Neuron&#39;s revenue. The fund collects no other

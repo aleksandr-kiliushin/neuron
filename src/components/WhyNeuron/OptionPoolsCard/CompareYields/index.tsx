@@ -7,7 +7,7 @@ import { InputRange } from './InputRange'
 import { AmountYouWillEarnPerYearBar } from './AmountYouWillEarnPerYearBar'
 
 // Styles
-import { Color } from '#styles/index'
+import { Color, mqMobile } from '#styles/index'
 
 // Assets
 import logo3Svg from '#assets/logo-3.svg'
@@ -20,7 +20,13 @@ export const CompareYields = () => {
 	const amountYouWillEarn = Math.ceil(deposit * (1 + annualPercent / 100))
 
 	return (
-		<div>
+		<div
+			css={css`
+				${mqMobile} {
+					display: none;
+				}
+			`}
+		>
 			<h4 css={{ marginBottom: '13px', color: 'white' }}>Compare Neuron USDC Yields</h4>
 
 			<div css={{ color: Color.Violet20, fontSize: '14px', fontWeight: 600, lineHeight: '19px' }}>

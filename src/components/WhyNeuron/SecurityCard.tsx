@@ -54,7 +54,11 @@ export const SecurityCard = () => {
 				We are obsessed with security
 			</div>
 
-			<CardText css={{ maxWidth: '318px' }}>
+			<CardText
+				css={css`
+					max-width: 318px;
+				`}
+			>
 				Regularly reaudited protocol, bug bounty campaign. Web3&#39;s brightest minds(link) work on
 				your better sleep at night.
 			</CardText>

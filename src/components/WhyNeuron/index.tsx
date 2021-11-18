@@ -32,7 +32,13 @@ export const WhyNeuron = () => {
 				}
 			`}
 		>
-			<h3 css={{ textAlign: 'center' }}>Why {isMobile && <br />} Neuron Fund?</h3>
+			<h3
+				css={css`
+					text-align: center;
+				`}
+			>
+				Why {isMobile && <br />} Neuron Fund?
+			</h3>
 
 			<div
 				css={css`
@@ -68,7 +74,7 @@ export const WhyNeuron = () => {
 							'distribution'
 							'option-pools'
 							'single-assets';
-						grid-template-columns: auto;
+						grid-template-columns: initial;
 						gap: 16px;
 						height: auto;
 					}
