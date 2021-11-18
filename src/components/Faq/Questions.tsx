@@ -27,16 +27,28 @@ export const Questions = () => {
 	]
 
 	return (
-		<div css={{ display: 'flex', flexDirection: 'column', rowGap: '4px', maxWidth: '930px' }}>
+		<div
+			css={css`
+				display: flex;
+				flex-direction: column;
+				row-gap: 4px;
+				max-width: 930px;
+			`}
+		>
 			{questions.map(({ answer, isOpened, question }, index) => (
-				<div key={index}>
+				<div
+					css={css`
+						border: 1px solid ${Color.Violet24};
+						border-radius: 8px;
+					`}
+					key={index}
+				>
 					<div
 						css={css`
 							display: flex;
 							justify-content: space-between;
 							padding: 30px 50px 30px 85px;
 							background-color: ${isOpened ? Color.Light2 : 'white'};
-							border: 1px solid ${Color.Violet24};
 							border-radius: 8px 8px ${isOpened && !isMobile ? '0 0' : '8px 8px'};
 							color: ${Color.Dark1};
 							font-family: Lato;
