@@ -29,7 +29,7 @@ export default function Home() {
 			<Demo />
 			<WhyNeuron />
 			<Faq />
-			{/* <Footer /> */}
+			<Footer />
 		</div>
 	)
 }
