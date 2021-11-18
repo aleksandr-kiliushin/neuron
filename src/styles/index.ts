@@ -30,4 +30,5 @@ export enum Color {
 	Violet21 = '#6b6bff',
 	Violet22 = '#3c42e3',
 	Violet23 = '#5956ec',
+	Violet24 = '#c9b6ff',
 }

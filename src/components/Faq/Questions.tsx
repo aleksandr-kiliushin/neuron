@@ -1,13 +1,18 @@
 import Image from 'next/image'
 import { css } from '@emotion/react'
 
+// Utils
+import { useIsMobile } from '#utils/hooks'
+
 // Styles
-import { Color } from '#styles/index'
+import { Color, mqMobile } from '#styles/index'
 
 // Assets
 import chevronSvg from '#assets/chevron.svg'
 
 export const Questions = () => {
+	const isMobile = useIsMobile()
+
 	const questions = [
 		{ answer: '', isOpened: false, question: 'Can I stake if I have less than 32 ETH?' },
 		{ answer: '', isOpened: false, question: 'Can I stake if I have less than 32 ETH?' },
@@ -31,23 +36,38 @@ export const Questions = () => {
 							justify-content: space-between;
 							padding: 30px 50px 30px 85px;
 							background-color: ${isOpened ? Color.Light2 : 'white'};
-							border-radius: 8px 8px ${isOpened ? '0 0' : '8px 8px'};
+							border: 1px solid ${Color.Violet24};
+							border-radius: 8px 8px ${isOpened && !isMobile ? '0 0' : '8px 8px'};
 							color: ${Color.Dark1};
 							font-family: Lato;
 							font-size: 18px;
 							font-weight: 700;
 							line-height: 22px;
+							${mqMobile} {
+								padding: 18px 25px;
+								font-size: 14px;
+								line-height: 17px;
+							}
 						`}
 					>
 						{question}
 
-						<Image
-							alt=""
-							css={{ transform: isOpened ? 'none' : 'rotate(180deg)' }}
-							src={chevronSvg}
-						/>
+						<div
+							css={css`
+								${mqMobile} {
+									display: none;
+								}
+							`}
+						>
+							<Image
+								alt=""
+								css={{ transform: isOpened ? 'none' : 'rotate(180deg)' }}
+								src={chevronSvg}
+							/>
+						</div>
 					</div>
-					{isOpened && (
+
+					{isOpened && !isMobile && (
 						<div
 							css={css`
 								padding: 34px 56px 46px 81px;
