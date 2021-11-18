@@ -72,7 +72,11 @@ export const CompareYields = () => {
 					You will earn per 1 year
 				</div>
 
-				<AmountYouWillEarnPerYearBar amountYouWillEarn={amountYouWillEarn} maxAmount={maxAmount} />
+				<AmountYouWillEarnPerYearBar
+					amountYouWillEarn={amountYouWillEarn}
+					deposit={deposit}
+					maxAmount={maxAmount}
+				/>
 
 				<div css={{ color: 'white', fontSize: '18px', fontWeight: 600, lineHeight: '22px' }}>
 					${amountYouWillEarn}

@@ -18,12 +18,12 @@ export const MarketUsdcYields = ({ marketUsdcYields }: IProps) => {
 			`}
 		>
 			<div
-				css={{
-					marginBottom: '15px',
-					color: Color.Violet18,
-					fontSize: '14px',
-					lineHeight: '17px',
-				}}
+				css={css`
+					margin-bottom: 15px;
+					color: ${Color.Violet18};
+					font-size: 14px;
+					line-height: 17px;
+				`}
 			>
 				Market USDC Yelds
 			</div>
