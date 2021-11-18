@@ -57,10 +57,10 @@ interface IProps {
 	 * В самом низу “Market USDC Yelds” это список из иконок и процентов других
 	 * протоколов, нужно предусмотреть возможно задавать эти значения через пропсы.
 	 **/
-	marketUsdcYields: marketUsdcYieldsItem[]
+	marketUsdcYields: IMarketUsdcYieldsItem[]
 }
 
-interface marketUsdcYieldsItem {
+interface IMarketUsdcYieldsItem {
 	logo: string
 	percent: number
 }
