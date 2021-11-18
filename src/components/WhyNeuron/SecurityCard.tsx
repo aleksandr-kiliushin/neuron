@@ -9,7 +9,7 @@ import { AuditPassed } from './AuditPassed'
 import { useIsMobile } from '#utils/hooks'
 
 // Styles
-import { Color } from '#styles/index'
+import { Color, mqMobile } from '#styles/index'
 
 export const SecurityCard = () => {
 	const isMobile = useIsMobile()
@@ -21,14 +21,35 @@ export const SecurityCard = () => {
 				display: flex;
 				flex-direction: column;
 				padding: 20px 20px 50px 45px;
+				${mqMobile} {
+					padding: 27px 18px 31px 26px;
+				}
 			`}
 		>
 			{!isMobile && <AuditPassed />}
 
-			<h4 css={{ marginBottom: '7px' }}>Security</h4>
+			<h4
+				css={css`
+					margin-bottom: 7px;
+					${mqMobile} {
+						margin-bottom: 0;
+					}
+				`}
+			>
+				Security
+			</h4>
 
 			<div
-				css={{ marginBottom: '25px', color: Color.Violet16, fontSize: '16px', lineHeight: '19px' }}
+				css={css`
+					margin-bottom: 25px;
+					color: ${Color.Violet16};
+					font-size: 16px;
+					line-height: 19px;
+					${mqMobile} {
+						font-size: 12px;
+						line-height: 14px;
+					}
+				`}
 			>
 				We are obsessed with security
 			</div>
