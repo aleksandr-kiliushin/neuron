@@ -52,20 +52,18 @@ export const Question = ({ isOpened, questionData, toggleQuestion }: IProps) => 
 
 				<div
 					css={css`
+						transform: ${isOpened ? 'none' : 'rotate(180deg)'};
+						transition: transform 0.4s;
 						${mqMobile} {
 							display: none;
 						}
 					`}
 				>
-					<Image
-						alt=""
-						css={{ transform: isOpened ? 'none' : 'rotate(180deg)' }}
-						src={chevronSvg}
-					/>
+					<Image alt="" src={chevronSvg} />
 				</div>
 			</div>
 
-			{isOpened && !isMobile && (
+			{isOpened && (
 				<div
 					css={css`
 						padding: 34px 56px 46px 81px;
