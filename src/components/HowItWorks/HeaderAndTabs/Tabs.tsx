@@ -33,6 +33,7 @@ export const Tabs = () => {
 						font-size: 18px;
 						line-height: 22px;
 						border-bottom: ${isActive ? `3px solid ${Color.Blue1}` : 'none'};
+						cursor: pointer;
 						${mqMobile} {
 							padding-bottom: 18px;
 							font-size: 14px;

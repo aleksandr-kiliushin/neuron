@@ -10,10 +10,8 @@ export const HeaderAndTabs = () => {
 	return (
 		<div
 			css={css`
-				height: 275px;
-				padding 100px 70px 28px;
+				padding: 100px 70px 50px;
 				${mqMobile} {
-					height: 200px;
 					padding: 50px 15px 19px;
 				}
 			`}

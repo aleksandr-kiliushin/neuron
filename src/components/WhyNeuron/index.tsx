@@ -22,12 +22,10 @@ export const WhyNeuron = () => {
 				display: flex;
 				flex-direction: column;
 				row-gap: 50px;
-				height: 890px;
 				padding: 95px 70px;
 				background: linear-gradient(180deg, #2c29ba 0%, #2b28b9 0.01%, #8d8bff 100%);
 				${mqMobile} {
 					row-gap: 24px;
-					height: auto;
 					padding: 0 16px;
 				}
 			`}
@@ -37,7 +35,7 @@ export const WhyNeuron = () => {
 					text-align: center;
 				`}
 			>
-				Why {isMobile && <br />} Neuron Fund?
+				WHY {isMobile && <br />} NEURON FUND?
 			</h3>
 
 			<div
@@ -67,7 +65,6 @@ export const WhyNeuron = () => {
 						'distribution option-pools single-assets';
 					grid-template-columns: 12fr 18fr 20fr;
 					gap: 28px;
-					height: 584px;
 					${mqMobile} {
 						grid-template-areas:
 							'security'
@@ -76,7 +73,6 @@ export const WhyNeuron = () => {
 							'single-assets';
 						grid-template-columns: initial;
 						gap: 16px;
-						height: auto;
 					}
 				`}
 			>

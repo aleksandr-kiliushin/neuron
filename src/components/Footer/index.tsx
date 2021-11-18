@@ -32,7 +32,6 @@ export const Footer = () => {
 	return (
 		<div
 			css={css`
-				height: 390px;
 				padding: 100px 82px 80px 56px;
 				box-shadow: 4px -8px 30px rgba(223, 211, 255, 0.7);
 				${mqMobile} {

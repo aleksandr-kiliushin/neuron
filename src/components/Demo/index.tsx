@@ -24,7 +24,7 @@ export const Demo = () => {
 				background: linear-gradient(180deg, #383dc2 0%, #2c29ba 100%);
 				${mqMobile} {
 					grid-template-columns: initial;
-					height: auto;
+					height: initial;
 					padding: 0 15px 50px;
 				}
 			`}
