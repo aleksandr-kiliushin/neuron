@@ -84,6 +84,7 @@ export const Questions = () => {
 							css={css`
 								padding: 34px 56px 46px 81px;
 								background-color: white;
+								border-top: 1px solid ${Color.Violet24};
 								border-radius: 0 0 8px 8px;
 								color: ${Color.Dark1};
 								font-size: 18px;
