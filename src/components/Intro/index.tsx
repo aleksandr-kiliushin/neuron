@@ -125,13 +125,26 @@ export const Intro = () => {
 				css={css`
 					position: absolute;
 					right: 0;
-					top: -80px;
+					top: -5%;
+					width: 100vw;
 					${mqMobile} {
-						top: 0;
+						top: 10%;
+					}
+					@media (max-width: 380px) {
+						top: 5%;
+					}
+					& > div {
+						width: 100vw;
 					}
 				`}
 			>
-				<Image alt="" src={isMobile ? introBackgroundMobile : introBackgroundDesktop} />
+				<Image
+					alt=""
+					css={css`
+						object-fit: cover;
+					`}
+					src={isMobile ? introBackgroundMobile : introBackgroundDesktop}
+				/>
 			</div>
 		</div>
 	)
